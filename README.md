@@ -9,6 +9,10 @@ A teachable image classifier that runs on any browser built using TensorFlow JS.
 
 The demo is live at [navendu.me/teachable-machine](https://navendu.me/teachable-machine).
 
+# Preview
+
+![](./preview.png)
+
 # Usage
 
 Add labels to upto 3 categories and click add to train the model using that image.
@@ -16,3 +20,5 @@ Add labels to upto 3 categories and click add to train the model using that imag
 Add more images to improve the accuracy.
 
 Once the model is trained, the predictions and the probability would be displayed on top.
+
+### Please leave a star if you like this project!
