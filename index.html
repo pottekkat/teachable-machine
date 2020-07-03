@@ -13,11 +13,47 @@
 
 <body>
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">Teachable Machine using TensorFlow JS</span>
+        <a class="navbar-brand" href="#">
+            <img src="./keyboard.png" width="30" height="30" alt="" loading="lazy">
+            Teachable Machine using TensorFlow JS
+        </a>
     </nav>
+    <div class="text-center p-3 bg-info">
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/navendu-pottekkat"
+            data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true"
+            aria-label="Follow @navendu-pottekkat on GitHub">Follow @navendu-pottekkat</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/navendu-pottekkat/teachable-machine"
+            data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large"
+            data-show-count="true" aria-label="Star navendu-pottekkat/teachable-machine on GitHub">Star</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/navendu-pottekkat/teachable-machine/fork"
+            data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-repo-forked"
+            data-size="large" data-show-count="true"
+            aria-label="Fork navendu-pottekkat/teachable-machine on GitHub">Fork</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/navendu-pottekkat/teachable-machine/issues"
+            data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-issue-opened"
+            data-size="large" data-show-count="true"
+            aria-label="Issue navendu-pottekkat/teachable-machine on GitHub">Issue</a>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Create a real-time image classifier that runs in your browser!</h1>
+        <p class="lead">Scroll below and give permission to use your device camera.</p>
+        <span class="badge badge-pill badge-danger">Scroll Down!</span>
+        <hr class="my-4">
+        <p>Add labels to upto 3 categories and click <strong>add</strong> to train the model using that image.</p>
+        <p>Add more images to improve the accuracy.</p>
+        <p>Once the model is trained, the predictions and the probability would be displayed on top.</p>
+        <a class="btn btn-dark btn-lg" target="_blank" href="https://navendu.me" role="button">More cool stuff!</a>
+    </div>
+
     <div class="container">
         <div class="row d-flex justify-content-center text-center">
-            <div class="col" id="console"></div>
+            <strong>
+                <div class="col" id="console"></div>
+            </strong>
         </div>
         <!-- Add an image that we will use to test -->
         <div class="row d-flex justify-content-center text-center">
@@ -25,22 +61,51 @@
         </div>
         <div class="row d-flex justify-content-center text-center">
             <div class="col-sm m-2">
-                <button id="class-a">Add A</button>
-                <input type="text" id="a">
+                <button class="btn btn-info" id="class-a">Add A</button>
+                <input type="text" placeholder="Enter label for object A" id="a">
             </div>
             <div class="col-sm m-2">
-                <button id="class-b">Add B</button>
-                <input type="text" id="b">
+                <button class="btn btn-info" id="class-b">Add B</button>
+                <input type="text" placeholder="Enter label for object B" id="b">
             </div>
             <div class="col-sm m-2">
-                <button id="class-c">Add C</button>
-                <input type="text" id="c">
+                <button class="btn btn-info" id="class-c">Add C</button>
+                <input type="text" placeholder="Enter label for object C" id="c">
             </div>
         </div>
     </div>
 
+    <footer class="footer py-3 mt-4 bg-dark text-white text-center">
+        <div class="container">
+            <a href="">MIT Licensed</a> | Navendu Pottekkat 2020 | Hosted with ❤ by <a
+                href="https://github.com/">GitHub</a>
+            <p>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/navendu-pottekkat"
+                    data-color-scheme="no-preference: light; light: light; dark: light;"
+                    aria-label="Follow @navendu-pottekkat on GitHub">Follow @navendu-pottekkat</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/navendu-pottekkat/teachable-machine"
+                    data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star"
+                    aria-label="Star navendu-pottekkat/teachable-machine on GitHub">Star</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/navendu-pottekkat/teachable-machine/fork"
+                    data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-repo-forked"
+                    aria-label="Fork navendu-pottekkat/teachable-machine on GitHub">Fork</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/navendu-pottekkat/teachable-machine/issues"
+                    data-color-scheme="no-preference: light; light: light; dark: light;"
+                    data-icon="octicon-issue-opened"
+                    aria-label="Issue navendu-pottekkat/teachable-machine on GitHub">Issue</a>
+            </p>
+        </div>
+    </footer>
+
     <!-- Load index.js after the content of the page -->
     <script src="script.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

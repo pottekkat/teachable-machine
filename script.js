@@ -48,8 +48,8 @@ async function app() {
 
             const classes = [document.getElementById('a').value, document.getElementById('b').value, document.getElementById('c').value];
             document.getElementById('console').innerText = `
-          prediction: ${classes[result.label]}\n
-          probability: ${result.confidences[result.label]}
+          Prediction: ${classes[result.label]}\n
+          Probability: ${result.confidences[result.label]}
         `;
 
             // Dispose the tensor to release the memory.
